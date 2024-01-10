@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="container">
+    <h2 class="h1-responsive font-weight-bold text-center my-4 mb-5">About</h2>
+        {% for cnt in context %}
+            {{ cnt.content }}
+        {% endfor %}
+    </section>
+{% endblock content %}
